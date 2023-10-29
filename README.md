@@ -6,3 +6,5 @@ You, the player, will be versing a computer who will randomly be choosing Rock, 
 - Scissors cuts paper.
 - Paper covers rock.
 - First to three wins.
+
+## [Live Demo](https://brandyncoverdill.github.io/Rock-Paper-Scissors/)
