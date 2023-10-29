@@ -70,19 +70,28 @@ startGameBtn.addEventListener('click', () => {
 	scissorsBtn.toggleAttribute('disabled');
 });
 
-rockBtn.addEventListener('click', () => {
-	player.choice = 'rock';
-	showOutcome();
-});
+const gameBtns = document.querySelector('.in-game');
 
-paperBtn.addEventListener('click', () => {
-	player.choice = 'paper';
-	showOutcome();
-});
+gameBtns.addEventListener('click', (e) => {
+	switch (e.target.id) {
+		case 'rock':
+			player.choice = 'rock';
+			showOutcome();
+			break;
 
-scissorsBtn.addEventListener('click', () => {
-	player.choice = 'scissors';
-	showOutcome();
+		case 'paper':
+			player.choice = 'paper';
+			showOutcome();
+			break;
+
+		case 'scissors':
+			player.choice = 'scissors';
+			showOutcome();
+			break;
+
+		default:
+			break;
+	}
 });
 
 function decideWinner() {
